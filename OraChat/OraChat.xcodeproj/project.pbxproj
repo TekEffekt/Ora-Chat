@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		B66520D21E9305850040A01A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520D11E9305850040A01A /* AppDelegate.swift */; };
 		B66520D41E9305850040A01A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520D31E9305850040A01A /* ViewController.swift */; };
-		B66520D71E9305850040A01A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66520D51E9305850040A01A /* Main.storyboard */; };
 		B66520D91E9305850040A01A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66520D81E9305850040A01A /* Assets.xcassets */; };
-		B66520DC1E9305850040A01A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66520DA1E9305850040A01A /* LaunchScreen.storyboard */; };
 		B66520E71E9305860040A01A /* OraChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520E61E9305860040A01A /* OraChatTests.swift */; };
 		B66520F21E9305860040A01A /* OraChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520F11E9305860040A01A /* OraChatUITests.swift */; };
+		B66521141E933BD30040A01A /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B665210E1E933BD30040A01A /* Account.storyboard */; };
+		B66521151E933BD30040A01A /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B665210F1E933BD30040A01A /* Base.storyboard */; };
+		B66521161E933BD30040A01A /* Chat Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66521101E933BD30040A01A /* Chat Detail.storyboard */; };
+		B66521171E933BD30040A01A /* Chats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66521111E933BD30040A01A /* Chats.storyboard */; };
+		B66521181E933BD30040A01A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66521121E933BD30040A01A /* Login.storyboard */; };
+		B66521191E933BD30040A01A /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66521131E933BD30040A01A /* Register.storyboard */; };
+		B665211B1E933BD90040A01A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B665211A1E933BD90040A01A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +42,7 @@
 		B66520CE1E9305850040A01A /* OraChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OraChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66520D11E9305850040A01A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B66520D31E9305850040A01A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B66520D61E9305850040A01A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B66520D81E9305850040A01A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B66520DB1E9305850040A01A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B66520DD1E9305850040A01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66520E21E9305860040A01A /* OraChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OraChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66520E61E9305860040A01A /* OraChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OraChatTests.swift; sourceTree = "<group>"; };
@@ -47,6 +50,13 @@
 		B66520ED1E9305860040A01A /* OraChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OraChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66520F11E9305860040A01A /* OraChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OraChatUITests.swift; sourceTree = "<group>"; };
 		B66520F31E9305860040A01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B665210E1E933BD30040A01A /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Account.storyboard; path = Storyboards/Account.storyboard; sourceTree = "<group>"; };
+		B665210F1E933BD30040A01A /* Base.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Base.storyboard; path = Storyboards/Base.storyboard; sourceTree = "<group>"; };
+		B66521101E933BD30040A01A /* Chat Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Chat Detail.storyboard"; path = "Storyboards/Chat Detail.storyboard"; sourceTree = "<group>"; };
+		B66521111E933BD30040A01A /* Chats.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Chats.storyboard; path = Storyboards/Chats.storyboard; sourceTree = "<group>"; };
+		B66521121E933BD30040A01A /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
+		B66521131E933BD30040A01A /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Register.storyboard; path = Storyboards/Register.storyboard; sourceTree = "<group>"; };
+		B665211A1E933BD90040A01A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,10 @@
 			children = (
 				B66520D11E9305850040A01A /* AppDelegate.swift */,
 				B66520D31E9305850040A01A /* ViewController.swift */,
-				B66520D51E9305850040A01A /* Main.storyboard */,
 				B66520D81E9305850040A01A /* Assets.xcassets */,
-				B66520DA1E9305850040A01A /* LaunchScreen.storyboard */,
 				B66520DD1E9305850040A01A /* Info.plist */,
+				B665211A1E933BD90040A01A /* LaunchScreen.storyboard */,
+				B66521011E931AC60040A01A /* Storyboards */,
 			);
 			path = OraChat;
 			sourceTree = "<group>";
@@ -123,6 +133,19 @@
 				B66520F31E9305860040A01A /* Info.plist */,
 			);
 			path = OraChatUITests;
+			sourceTree = "<group>";
+		};
+		B66521011E931AC60040A01A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B665210E1E933BD30040A01A /* Account.storyboard */,
+				B665210F1E933BD30040A01A /* Base.storyboard */,
+				B66521101E933BD30040A01A /* Chat Detail.storyboard */,
+				B66521111E933BD30040A01A /* Chats.storyboard */,
+				B66521121E933BD30040A01A /* Login.storyboard */,
+				B66521131E933BD30040A01A /* Register.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +257,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66520DC1E9305850040A01A /* LaunchScreen.storyboard in Resources */,
+				B66521161E933BD30040A01A /* Chat Detail.storyboard in Resources */,
+				B665211B1E933BD90040A01A /* LaunchScreen.storyboard in Resources */,
+				B66521141E933BD30040A01A /* Account.storyboard in Resources */,
+				B66521191E933BD30040A01A /* Register.storyboard in Resources */,
+				B66521181E933BD30040A01A /* Login.storyboard in Resources */,
+				B66521171E933BD30040A01A /* Chats.storyboard in Resources */,
+				B66521151E933BD30040A01A /* Base.storyboard in Resources */,
 				B66520D91E9305850040A01A /* Assets.xcassets in Resources */,
-				B66520D71E9305850040A01A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,25 +324,6 @@
 			targetProxy = B66520EE1E9305860040A01A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B66520D51E9305850040A01A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B66520D61E9305850040A01A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B66520DA1E9305850040A01A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B66520DB1E9305850040A01A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B66520F41E9305860040A01A /* Debug */ = {
@@ -415,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V8N6W23849;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = OraChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.kylezawacki.OraChat;
@@ -428,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V8N6W23849;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = OraChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.kylezawacki.OraChat;
@@ -513,6 +524,7 @@
 				B66520F81E9305860040A01A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B66520F91E9305860040A01A /* Build configuration list for PBXNativeTarget "OraChatTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +533,7 @@
 				B66520FB1E9305860040A01A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B66520FC1E9305860040A01A /* Build configuration list for PBXNativeTarget "OraChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +542,7 @@
 				B66520FE1E9305860040A01A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

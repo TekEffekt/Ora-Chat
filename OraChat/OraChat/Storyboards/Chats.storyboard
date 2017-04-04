@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--OraChat-->
+        <scene sceneID="dhH-Zb-Q4d">
+            <objects>
+                <viewController storyboardIdentifier="Chats" title="OraChat" automaticallyAdjustsScrollViewInsets="NO" id="85P-lx-e4m" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wR9-fe-FTt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fgh-vX-5zK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9VG-IU-3q5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rdx-W8-RgV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rdx-W8-RgV" firstAttribute="width" secondItem="9VG-IU-3q5" secondAttribute="width" id="Omm-Lf-6cR"/>
+                            <constraint firstItem="Fgh-vX-5zK" firstAttribute="top" secondItem="rdx-W8-RgV" secondAttribute="bottom" id="Qpg-6p-gkT"/>
+                            <constraint firstItem="rdx-W8-RgV" firstAttribute="top" secondItem="wR9-fe-FTt" secondAttribute="bottom" id="kbe-l1-duc"/>
+                            <constraint firstItem="rdx-W8-RgV" firstAttribute="centerX" secondItem="9VG-IU-3q5" secondAttribute="centerX" id="uiz-Mz-Rps"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="OraChat" id="Sj2-hd-WUT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LCF-l1-0xB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125.5999999999999" y="177.66116941529236"/>
+        </scene>
+        <!--Chats-->
+        <scene sceneID="LwS-m9-wKv">
+            <objects>
+                <navigationController storyboardIdentifier="Nav" automaticallyAdjustsScrollViewInsets="NO" id="Eap-09-ac2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chats" image="Chats" id="yKK-x2-zVS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gfU-5J-fUt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="85P-lx-e4m" kind="relationship" relationship="rootViewController" id="3Lh-Fa-Tlt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPw-FH-Umd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186.40000000000001" y="177.66116941529236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Chats" width="25" height="25"/>
+    </resources>
+</document>
