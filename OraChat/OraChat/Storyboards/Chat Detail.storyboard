@@ -12,7 +12,7 @@
         <!--Chat Detail View Controller-->
         <scene sceneID="5KL-eM-RTr">
             <objects>
-                <viewController storyboardIdentifier="Chat Detail" id="MMa-Ze-InW" customClass="ChatDetailViewController" customModule="OraChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Chat Detail" automaticallyAdjustsScrollViewInsets="NO" id="MMa-Ze-InW" customClass="ChatDetailViewController" customModule="OraChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n4K-1H-X1S"/>
                         <viewControllerLayoutGuide type="bottom" id="tqh-gF-EM1"/>
@@ -20,12 +20,27 @@
                     <view key="view" contentMode="scaleToFill" id="aLk-dj-rWV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pU7-BV-y2r">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pU7-BV-y2r" firstAttribute="top" secondItem="n4K-1H-X1S" secondAttribute="bottom" id="6j0-8w-ee1"/>
+                            <constraint firstItem="tqh-gF-EM1" firstAttribute="top" secondItem="pU7-BV-y2r" secondAttribute="bottom" id="FXE-zm-zv5"/>
+                            <constraint firstAttribute="trailing" secondItem="pU7-BV-y2r" secondAttribute="trailing" id="ehs-8q-1zf"/>
+                            <constraint firstItem="pU7-BV-y2r" firstAttribute="leading" secondItem="aLk-dj-rWV" secondAttribute="leading" id="z6q-cJ-1Jf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chatViewContainer" destination="pU7-BV-y2r" id="mPt-J6-3Tv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GtB-fH-dsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-495" y="167"/>
+            <point key="canvasLocation" x="-495.19999999999999" y="166.8665667166417"/>
         </scene>
     </scenes>
 </document>
