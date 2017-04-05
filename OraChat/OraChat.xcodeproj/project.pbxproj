@@ -7,10 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B64353291E94408F00472091 /* ChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353281E94408F00472091 /* ChatTests.swift */; };
+		B643532C1E9440A900472091 /* ChatsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643532B1E9440A900472091 /* ChatsViewControllerTests.swift */; };
+		B643532F1E9441EC00472091 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643532E1E9441EC00472091 /* User.swift */; };
+		B64353321E94428400472091 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353311E94428400472091 /* Message.swift */; };
+		B64353341E944D4800472091 /* ChatsDatasourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353331E944D4800472091 /* ChatsDatasourceTests.swift */; };
+		B643533C1E94555A00472091 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353381E94555A00472091 /* Chat.swift */; };
+		B643533D1E94555A00472091 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353391E94555A00472091 /* ChatCell.swift */; };
+		B643533E1E94555A00472091 /* ChatsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643533A1E94555A00472091 /* ChatsDatasource.swift */; };
+		B643533F1E94555A00472091 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643533B1E94555A00472091 /* ChatsViewController.swift */; };
+		B64353411E94752500472091 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353401E94752500472091 /* MockData.swift */; };
+		B64353701E94A26300472091 /* Date+TimeDifDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643536F1E94A26300472091 /* Date+TimeDifDisplay.swift */; };
+		B64353721E94B55800472091 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353711E94B55800472091 /* DummyData.swift */; };
+		B64353741E94BF9C00472091 /* ChatsOnDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353731E94BF9C00472091 /* ChatsOnDay.swift */; };
+		B64353771E94C39600472091 /* ChatDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353761E94C39600472091 /* ChatDetailViewControllerTests.swift */; };
+		B64353791E94C3CF00472091 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353781E94C3CF00472091 /* ChatDetailViewController.swift */; };
+		B643537B1E95249500472091 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643537A1E95249500472091 /* ChatView.swift */; };
+		B643537D1E9526C400472091 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643537C1E9526C400472091 /* BubbleView.swift */; };
 		B66520D21E9305850040A01A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520D11E9305850040A01A /* AppDelegate.swift */; };
-		B66520D41E9305850040A01A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520D31E9305850040A01A /* ViewController.swift */; };
 		B66520D91E9305850040A01A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66520D81E9305850040A01A /* Assets.xcassets */; };
-		B66520E71E9305860040A01A /* OraChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520E61E9305860040A01A /* OraChatTests.swift */; };
 		B66520F21E9305860040A01A /* OraChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520F11E9305860040A01A /* OraChatUITests.swift */; };
 		B66521141E933BD30040A01A /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B665210E1E933BD30040A01A /* Account.storyboard */; };
 		B66521151E933BD30040A01A /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B665210F1E933BD30040A01A /* Base.storyboard */; };
@@ -39,13 +54,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B64353281E94408F00472091 /* ChatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatTests.swift; path = Chats/ChatTests.swift; sourceTree = "<group>"; };
+		B643532B1E9440A900472091 /* ChatsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatsViewControllerTests.swift; path = Chats/ChatsViewControllerTests.swift; sourceTree = "<group>"; };
+		B643532E1E9441EC00472091 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Account/User.swift; sourceTree = "<group>"; };
+		B64353311E94428400472091 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B64353331E944D4800472091 /* ChatsDatasourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatsDatasourceTests.swift; path = Chats/ChatsDatasourceTests.swift; sourceTree = "<group>"; };
+		B64353381E94555A00472091 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		B64353391E94555A00472091 /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		B643533A1E94555A00472091 /* ChatsDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDatasource.swift; sourceTree = "<group>"; };
+		B643533B1E94555A00472091 /* ChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		B64353401E94752500472091 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		B643536F1E94A26300472091 /* Date+TimeDifDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+TimeDifDisplay.swift"; sourceTree = "<group>"; };
+		B64353711E94B55800472091 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		B64353731E94BF9C00472091 /* ChatsOnDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsOnDay.swift; sourceTree = "<group>"; };
+		B64353761E94C39600472091 /* ChatDetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatDetailViewControllerTests.swift; path = "Chat Detail/ChatDetailViewControllerTests.swift"; sourceTree = "<group>"; };
+		B64353781E94C3CF00472091 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
+		B643537A1E95249500472091 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		B643537C1E9526C400472091 /* BubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		B66520CE1E9305850040A01A /* OraChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OraChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66520D11E9305850040A01A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B66520D31E9305850040A01A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B66520D81E9305850040A01A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B66520DD1E9305850040A01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66520E21E9305860040A01A /* OraChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OraChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B66520E61E9305860040A01A /* OraChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OraChatTests.swift; sourceTree = "<group>"; };
 		B66520E81E9305860040A01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66520ED1E9305860040A01A /* OraChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OraChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66520F11E9305860040A01A /* OraChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OraChatUITests.swift; sourceTree = "<group>"; };
@@ -84,6 +114,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B643532A1E94409200472091 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				B643532B1E9440A900472091 /* ChatsViewControllerTests.swift */,
+				B64353281E94408F00472091 /* ChatTests.swift */,
+				B64353331E944D4800472091 /* ChatsDatasourceTests.swift */,
+			);
+			name = Chats;
+			sourceTree = "<group>";
+		};
+		B643532D1E9441CA00472091 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				B643532E1E9441EC00472091 /* User.swift */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		B64353301E94425F00472091 /* Chat Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B64353781E94C3CF00472091 /* ChatDetailViewController.swift */,
+				B64353311E94428400472091 /* Message.swift */,
+				B643537A1E95249500472091 /* ChatView.swift */,
+				B643537C1E9526C400472091 /* BubbleView.swift */,
+			);
+			path = "Chat Detail";
+			sourceTree = "<group>";
+		};
+		B64353371E94555A00472091 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				B64353381E94555A00472091 /* Chat.swift */,
+				B64353731E94BF9C00472091 /* ChatsOnDay.swift */,
+				B64353391E94555A00472091 /* ChatCell.swift */,
+				B643533A1E94555A00472091 /* ChatsDatasource.swift */,
+				B643533B1E94555A00472091 /* ChatsViewController.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		B643536E1E94A21400472091 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B643536F1E94A26300472091 /* Date+TimeDifDisplay.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B64353751E94C26300472091 /* Chat Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B64353761E94C39600472091 /* ChatDetailViewControllerTests.swift */,
+			);
+			name = "Chat Detail";
+			sourceTree = "<group>";
+		};
 		B66520C51E9305850040A01A = {
 			isa = PBXGroup;
 			children = (
@@ -107,11 +194,15 @@
 		B66520D01E9305850040A01A /* OraChat */ = {
 			isa = PBXGroup;
 			children = (
-				B66520D11E9305850040A01A /* AppDelegate.swift */,
-				B66520D31E9305850040A01A /* ViewController.swift */,
-				B66520D81E9305850040A01A /* Assets.xcassets */,
-				B66520DD1E9305850040A01A /* Info.plist */,
 				B665211A1E933BD90040A01A /* LaunchScreen.storyboard */,
+				B66520DD1E9305850040A01A /* Info.plist */,
+				B66520D81E9305850040A01A /* Assets.xcassets */,
+				B66520D11E9305850040A01A /* AppDelegate.swift */,
+				B64353711E94B55800472091 /* DummyData.swift */,
+				B643536E1E94A21400472091 /* Core */,
+				B643532D1E9441CA00472091 /* Account */,
+				B64353301E94425F00472091 /* Chat Detail */,
+				B64353371E94555A00472091 /* Chats */,
 				B66521011E931AC60040A01A /* Storyboards */,
 			);
 			path = OraChat;
@@ -120,7 +211,9 @@
 		B66520E51E9305860040A01A /* OraChatTests */ = {
 			isa = PBXGroup;
 			children = (
-				B66520E61E9305860040A01A /* OraChatTests.swift */,
+				B64353401E94752500472091 /* MockData.swift */,
+				B64353751E94C26300472091 /* Chat Detail */,
+				B643532A1E94409200472091 /* Chats */,
 				B66520E81E9305860040A01A /* Info.plist */,
 			);
 			path = OraChatTests;
@@ -140,8 +233,8 @@
 			children = (
 				B665210E1E933BD30040A01A /* Account.storyboard */,
 				B665210F1E933BD30040A01A /* Base.storyboard */,
-				B66521101E933BD30040A01A /* Chat Detail.storyboard */,
 				B66521111E933BD30040A01A /* Chats.storyboard */,
+				B66521101E933BD30040A01A /* Chat Detail.storyboard */,
 				B66521121E933BD30040A01A /* Login.storyboard */,
 				B66521131E933BD30040A01A /* Register.storyboard */,
 			);
@@ -289,7 +382,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66520D41E9305850040A01A /* ViewController.swift in Sources */,
+				B643533D1E94555A00472091 /* ChatCell.swift in Sources */,
+				B64353791E94C3CF00472091 /* ChatDetailViewController.swift in Sources */,
+				B64353321E94428400472091 /* Message.swift in Sources */,
+				B643533F1E94555A00472091 /* ChatsViewController.swift in Sources */,
+				B643537B1E95249500472091 /* ChatView.swift in Sources */,
+				B643533E1E94555A00472091 /* ChatsDatasource.swift in Sources */,
+				B643537D1E9526C400472091 /* BubbleView.swift in Sources */,
+				B643533C1E94555A00472091 /* Chat.swift in Sources */,
+				B64353701E94A26300472091 /* Date+TimeDifDisplay.swift in Sources */,
+				B643532F1E9441EC00472091 /* User.swift in Sources */,
+				B64353741E94BF9C00472091 /* ChatsOnDay.swift in Sources */,
+				B64353721E94B55800472091 /* DummyData.swift in Sources */,
 				B66520D21E9305850040A01A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +402,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66520E71E9305860040A01A /* OraChatTests.swift in Sources */,
+				B64353771E94C39600472091 /* ChatDetailViewControllerTests.swift in Sources */,
+				B64353341E944D4800472091 /* ChatsDatasourceTests.swift in Sources */,
+				B64353411E94752500472091 /* MockData.swift in Sources */,
+				B643532C1E9440A900472091 /* ChatsViewControllerTests.swift in Sources */,
+				B64353291E94408F00472091 /* ChatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
