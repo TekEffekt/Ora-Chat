@@ -17,13 +17,18 @@
 		B643533E1E94555A00472091 /* ChatsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643533A1E94555A00472091 /* ChatsDatasource.swift */; };
 		B643533F1E94555A00472091 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643533B1E94555A00472091 /* ChatsViewController.swift */; };
 		B64353411E94752500472091 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353401E94752500472091 /* MockData.swift */; };
-		B64353701E94A26300472091 /* Date+TimeDifDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643536F1E94A26300472091 /* Date+TimeDifDisplay.swift */; };
 		B64353721E94B55800472091 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353711E94B55800472091 /* DummyData.swift */; };
 		B64353741E94BF9C00472091 /* ChatsOnDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353731E94BF9C00472091 /* ChatsOnDay.swift */; };
 		B64353771E94C39600472091 /* ChatDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353761E94C39600472091 /* ChatDetailViewControllerTests.swift */; };
 		B64353791E94C3CF00472091 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353781E94C3CF00472091 /* ChatDetailViewController.swift */; };
 		B643537B1E95249500472091 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643537A1E95249500472091 /* ChatView.swift */; };
 		B643537D1E9526C400472091 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643537C1E9526C400472091 /* BubbleView.swift */; };
+		B64353F11E95CE3200472091 /* Date+TimeDifDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353EF1E95CE3200472091 /* Date+TimeDifDisplay.swift */; };
+		B64353F51E95CE7800472091 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353F41E95CE7800472091 /* DefaultTheme.swift */; };
+		B64353F71E95CE9700472091 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353F61E95CE9700472091 /* UIColor+AppColors.swift */; };
+		B64353F91E95D1E300472091 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353F81E95D1E300472091 /* AccountViewController.swift */; };
+		B64353FC1E95DBFC00472091 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353FB1E95DBFC00472091 /* LoginViewController.swift */; };
+		B64353FE1E95DCE800472091 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353FD1E95DCE800472091 /* RegisterViewController.swift */; };
 		B66520D21E9305850040A01A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520D11E9305850040A01A /* AppDelegate.swift */; };
 		B66520D91E9305850040A01A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66520D81E9305850040A01A /* Assets.xcassets */; };
 		B66520F21E9305860040A01A /* OraChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520F11E9305860040A01A /* OraChatUITests.swift */; };
@@ -64,13 +69,18 @@
 		B643533A1E94555A00472091 /* ChatsDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDatasource.swift; sourceTree = "<group>"; };
 		B643533B1E94555A00472091 /* ChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		B64353401E94752500472091 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
-		B643536F1E94A26300472091 /* Date+TimeDifDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+TimeDifDisplay.swift"; sourceTree = "<group>"; };
 		B64353711E94B55800472091 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		B64353731E94BF9C00472091 /* ChatsOnDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsOnDay.swift; sourceTree = "<group>"; };
 		B64353761E94C39600472091 /* ChatDetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatDetailViewControllerTests.swift; path = "Chat Detail/ChatDetailViewControllerTests.swift"; sourceTree = "<group>"; };
 		B64353781E94C3CF00472091 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
 		B643537A1E95249500472091 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		B643537C1E9526C400472091 /* BubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		B64353EF1E95CE3200472091 /* Date+TimeDifDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+TimeDifDisplay.swift"; path = "Core/Date+TimeDifDisplay.swift"; sourceTree = "<group>"; };
+		B64353F41E95CE7800472091 /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		B64353F61E95CE9700472091 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		B64353F81E95D1E300472091 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountViewController.swift; path = Account/AccountViewController.swift; sourceTree = "<group>"; };
+		B64353FB1E95DBFC00472091 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "Login & Register/LoginViewController.swift"; sourceTree = "<group>"; };
+		B64353FD1E95DCE800472091 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = "Login & Register/RegisterViewController.swift"; sourceTree = "<group>"; };
 		B66520CE1E9305850040A01A /* OraChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OraChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66520D11E9305850040A01A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B66520D81E9305850040A01A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				B643532E1E9441EC00472091 /* User.swift */,
+				B64353F81E95D1E300472091 /* AccountViewController.swift */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -158,7 +169,8 @@
 		B643536E1E94A21400472091 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B643536F1E94A26300472091 /* Date+TimeDifDisplay.swift */,
+				B64353EF1E95CE3200472091 /* Date+TimeDifDisplay.swift */,
+				B64353F31E95CE7800472091 /* UI */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -169,6 +181,25 @@
 				B64353761E94C39600472091 /* ChatDetailViewControllerTests.swift */,
 			);
 			name = "Chat Detail";
+			sourceTree = "<group>";
+		};
+		B64353F31E95CE7800472091 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B64353F41E95CE7800472091 /* DefaultTheme.swift */,
+				B64353F61E95CE9700472091 /* UIColor+AppColors.swift */,
+			);
+			name = UI;
+			path = Core/UI;
+			sourceTree = "<group>";
+		};
+		B64353FA1E95DBAD00472091 /* Login & Register */ = {
+			isa = PBXGroup;
+			children = (
+				B64353FB1E95DBFC00472091 /* LoginViewController.swift */,
+				B64353FD1E95DCE800472091 /* RegisterViewController.swift */,
+			);
+			name = "Login & Register";
 			sourceTree = "<group>";
 		};
 		B66520C51E9305850040A01A = {
@@ -199,6 +230,7 @@
 				B66520D81E9305850040A01A /* Assets.xcassets */,
 				B66520D11E9305850040A01A /* AppDelegate.swift */,
 				B64353711E94B55800472091 /* DummyData.swift */,
+				B64353FA1E95DBAD00472091 /* Login & Register */,
 				B643536E1E94A21400472091 /* Core */,
 				B643532D1E9441CA00472091 /* Account */,
 				B64353301E94425F00472091 /* Chat Detail */,
@@ -382,18 +414,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64353F51E95CE7800472091 /* DefaultTheme.swift in Sources */,
 				B643533D1E94555A00472091 /* ChatCell.swift in Sources */,
+				B64353F91E95D1E300472091 /* AccountViewController.swift in Sources */,
 				B64353791E94C3CF00472091 /* ChatDetailViewController.swift in Sources */,
 				B64353321E94428400472091 /* Message.swift in Sources */,
 				B643533F1E94555A00472091 /* ChatsViewController.swift in Sources */,
 				B643537B1E95249500472091 /* ChatView.swift in Sources */,
 				B643533E1E94555A00472091 /* ChatsDatasource.swift in Sources */,
 				B643537D1E9526C400472091 /* BubbleView.swift in Sources */,
+				B64353FE1E95DCE800472091 /* RegisterViewController.swift in Sources */,
 				B643533C1E94555A00472091 /* Chat.swift in Sources */,
-				B64353701E94A26300472091 /* Date+TimeDifDisplay.swift in Sources */,
 				B643532F1E9441EC00472091 /* User.swift in Sources */,
 				B64353741E94BF9C00472091 /* ChatsOnDay.swift in Sources */,
+				B64353F71E95CE9700472091 /* UIColor+AppColors.swift in Sources */,
+				B64353FC1E95DBFC00472091 /* LoginViewController.swift in Sources */,
 				B64353721E94B55800472091 /* DummyData.swift in Sources */,
+				B64353F11E95CE3200472091 /* Date+TimeDifDisplay.swift in Sources */,
 				B66520D21E9305850040A01A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,7 +1,110 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lko-41-b7p">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="Oxp-Wu-DJt">
+            <objects>
+                <viewController storyboardIdentifier="Login" title="Login" id="lko-41-b7p" customClass="AccountViewController" customModule="OraChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="any-PL-Dt0"/>
+                        <viewControllerLayoutGuide type="bottom" id="MUy-z7-jUd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OXU-Z6-oPi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCV-oz-DMS">
+                                <rect key="frame" x="16" y="65" width="43.5" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="JnQ-IX-DZv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oh3-VB-Zdg">
+                                <rect key="frame" x="16" y="100" width="359" height="1"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="N1g-WS-bZD"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDy-1u-tco">
+                                <rect key="frame" x="16" y="114" width="78" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="ydK-LN-hYW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EmX-Pk-bae">
+                                <rect key="frame" x="16" y="149" width="359" height="1"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="67w-i9-aBx"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Kyle" placeholder="Your Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKZ-i4-laH">
+                                <rect key="frame" x="121.5" y="65" width="237.5" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="z95sk8@outlook.com" placeholder="Your Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CjY-1N-QcU">
+                                <rect key="frame" x="121.5" y="114" width="237.5" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="CjY-1N-QcU" secondAttribute="trailing" id="0Yd-r6-5oy"/>
+                            <constraint firstItem="Oh3-VB-Zdg" firstAttribute="top" secondItem="HCV-oz-DMS" secondAttribute="bottom" constant="13" id="4sj-ZZ-dO8"/>
+                            <constraint firstItem="HCV-oz-DMS" firstAttribute="top" secondItem="any-PL-Dt0" secondAttribute="bottom" constant="45" id="7R4-rz-4rH"/>
+                            <constraint firstItem="CjY-1N-QcU" firstAttribute="leading" secondItem="tKZ-i4-laH" secondAttribute="leading" id="D4I-Fw-bkd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tKZ-i4-laH" secondAttribute="trailing" id="L0f-aI-9Ir"/>
+                            <constraint firstItem="HCV-oz-DMS" firstAttribute="leading" secondItem="OXU-Z6-oPi" secondAttribute="leadingMargin" id="L2M-yb-gqq"/>
+                            <constraint firstAttribute="trailing" secondItem="Oh3-VB-Zdg" secondAttribute="trailing" id="Mu6-KU-NwR"/>
+                            <constraint firstItem="tKZ-i4-laH" firstAttribute="leading" secondItem="HCV-oz-DMS" secondAttribute="trailing" constant="62" id="RmI-Wg-2s1"/>
+                            <constraint firstItem="tKZ-i4-laH" firstAttribute="centerY" secondItem="HCV-oz-DMS" secondAttribute="centerY" id="Ro3-uV-S3O"/>
+                            <constraint firstAttribute="trailing" secondItem="EmX-Pk-bae" secondAttribute="trailing" id="TmI-zx-yfZ"/>
+                            <constraint firstItem="EmX-Pk-bae" firstAttribute="leading" secondItem="OXU-Z6-oPi" secondAttribute="leading" constant="16" id="XZ0-8j-7oQ"/>
+                            <constraint firstItem="CjY-1N-QcU" firstAttribute="centerY" secondItem="LDy-1u-tco" secondAttribute="centerY" id="esy-gr-CPB"/>
+                            <constraint firstItem="LDy-1u-tco" firstAttribute="leading" secondItem="OXU-Z6-oPi" secondAttribute="leadingMargin" id="pGT-dh-kds"/>
+                            <constraint firstItem="Oh3-VB-Zdg" firstAttribute="leading" secondItem="OXU-Z6-oPi" secondAttribute="leading" constant="16" id="tGK-1X-TFd"/>
+                            <constraint firstItem="EmX-Pk-bae" firstAttribute="top" secondItem="LDy-1u-tco" secondAttribute="bottom" constant="13" id="x2l-ND-GPk"/>
+                            <constraint firstItem="LDy-1u-tco" firstAttribute="top" secondItem="Oh3-VB-Zdg" secondAttribute="bottom" constant="13" id="xUV-oF-7T8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="Account" id="ax6-SF-5J1"/>
+                    <navigationItem key="navigationItem" title="Title" id="nfA-X4-ikD">
+                        <barButtonItem key="leftBarButtonItem" title="Register" id="sgd-Mj-3K5"/>
+                        <barButtonItem key="rightBarButtonItem" title="Login" id="ksg-cu-J51"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="LDy-1u-tco" id="kdK-aZ-dGP"/>
+                        <outlet property="nameLabel" destination="HCV-oz-DMS" id="jux-cF-Cd1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCx-Cg-iqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="152.47376311844079"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Account" width="25" height="25"/>
+    </resources>
 </document>

@@ -15,6 +15,12 @@ struct Message {
     let text: String
     let createdAt: Date
     let user: User
+    
+    func getMetaData() -> String {
+        let now = Date()
+        return "\(user.name) - \(now.displayTime(from: createdAt))"
+    }
+    
 }
 
 extension Message: Equatable {
