@@ -144,18 +144,32 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="Account" id="JXy-MW-qQB"/>
                     <navigationItem key="navigationItem" title="Title" id="K3T-jh-9Fs">
-                        <barButtonItem key="rightBarButtonItem" title="Submit" id="cGR-BH-Lho"/>
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="cGR-BH-Lho">
+                            <connections>
+                                <action selector="submitTapped:" destination="ogb-Qf-v5T" id="aX1-eF-lum"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="emailLabel" destination="z43-RC-yuH" id="D5H-dA-ST3"/>
-                        <outlet property="nameLabel" destination="wIs-Lo-NIY" id="tpy-Sc-Bdi"/>
-                        <outlet property="passwordLabel" destination="xrb-fh-LHV" id="cnf-mr-cAa"/>
+                        <outlet property="confirmPasswordField" destination="T6b-fl-EXI" id="cSu-Be-NaM"/>
+                        <outlet property="emailField" destination="Nxg-09-llm" id="cbX-Iy-GJr"/>
+                        <outlet property="nameField" destination="CWg-Ss-SDR" id="ZWA-XR-GhB"/>
+                        <outlet property="passwordField" destination="MYi-qd-FIC" id="2R0-aT-xPA"/>
+                        <segue destination="fmz-Uh-SBX" kind="show" identifier="Show Chats" id="5GF-v7-pSt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJ6-46-eL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1080.8" y="152.47376311844079"/>
+        </scene>
+        <!--Base-->
+        <scene sceneID="blp-Nl-vXB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Base" referencedIdentifier="Base" id="fmz-Uh-SBX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5UK-w5-RTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="152"/>
         </scene>
     </scenes>
     <resources>

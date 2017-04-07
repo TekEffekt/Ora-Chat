@@ -10,6 +10,8 @@ struct User {
     let id: Int
     let name: String
     let email: String
+    
+    static var loggedInUser: User?
 }
 
 extension User: Equatable {
