@@ -54,6 +54,12 @@
 		B6C435CC1E982B74003D8B84 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C435CB1E982B74003D8B84 /* Parser.swift */; };
 		B6C435CE1E984050003D8B84 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C435CD1E984050003D8B84 /* RegisterRequest.swift */; };
 		B6C435D01E98416D003D8B84 /* RegisterOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C435CF1E98416D003D8B84 /* RegisterOperation.swift */; };
+		B6C8E2261E9849CA0014FD9D /* ChatListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2251E9849CA0014FD9D /* ChatListRequest.swift */; };
+		B6C8E2281E984C5E0014FD9D /* ChatListOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2271E984C5E0014FD9D /* ChatListOperation.swift */; };
+		B6C8E22A1E984E210014FD9D /* ChatParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2291E984E210014FD9D /* ChatParser.swift */; };
+		B6C8E22C1E9852230014FD9D /* MessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E22B1E9852230014FD9D /* MessageParser.swift */; };
+		B6C8E22E1E98724B0014FD9D /* ChatMessageListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E22D1E98724B0014FD9D /* ChatMessageListRequest.swift */; };
+		B6C8E2301E9874E00014FD9D /* ChatMessageListOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E22F1E9874E00014FD9D /* ChatMessageListOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +133,12 @@
 		B6C435CB1E982B74003D8B84 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		B6C435CD1E984050003D8B84 /* RegisterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		B6C435CF1E98416D003D8B84 /* RegisterOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterOperation.swift; sourceTree = "<group>"; };
+		B6C8E2251E9849CA0014FD9D /* ChatListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListRequest.swift; sourceTree = "<group>"; };
+		B6C8E2271E984C5E0014FD9D /* ChatListOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListOperation.swift; sourceTree = "<group>"; };
+		B6C8E2291E984E210014FD9D /* ChatParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatParser.swift; sourceTree = "<group>"; };
+		B6C8E22B1E9852230014FD9D /* MessageParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageParser.swift; sourceTree = "<group>"; };
+		B6C8E22D1E98724B0014FD9D /* ChatMessageListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageListRequest.swift; sourceTree = "<group>"; };
+		B6C8E22F1E9874E00014FD9D /* ChatMessageListOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageListOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +349,8 @@
 			children = (
 				B6C435C31E980815003D8B84 /* LoginRequest.swift */,
 				B6C435CD1E984050003D8B84 /* RegisterRequest.swift */,
+				B6C8E2251E9849CA0014FD9D /* ChatListRequest.swift */,
+				B6C8E22D1E98724B0014FD9D /* ChatMessageListRequest.swift */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -346,6 +360,8 @@
 			children = (
 				B6C435C61E98195B003D8B84 /* LoginOperation.swift */,
 				B6C435CF1E98416D003D8B84 /* RegisterOperation.swift */,
+				B6C8E2271E984C5E0014FD9D /* ChatListOperation.swift */,
+				B6C8E22F1E9874E00014FD9D /* ChatMessageListOperation.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -354,6 +370,8 @@
 			isa = PBXGroup;
 			children = (
 				B6C435C91E982B62003D8B84 /* UserParser.swift */,
+				B6C8E2291E984E210014FD9D /* ChatParser.swift */,
+				B6C8E22B1E9852230014FD9D /* MessageParser.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -499,19 +517,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C8E22A1E984E210014FD9D /* ChatParser.swift in Sources */,
+				B6C8E22E1E98724B0014FD9D /* ChatMessageListRequest.swift in Sources */,
 				B64353F51E95CE7800472091 /* DefaultTheme.swift in Sources */,
 				B643533D1E94555A00472091 /* ChatCell.swift in Sources */,
 				B6C435CA1E982B62003D8B84 /* UserParser.swift in Sources */,
 				B64353F91E95D1E300472091 /* AccountViewController.swift in Sources */,
 				B64353791E94C3CF00472091 /* ChatDetailViewController.swift in Sources */,
 				B64353321E94428400472091 /* Message.swift in Sources */,
+				B6C8E2281E984C5E0014FD9D /* ChatListOperation.swift in Sources */,
 				B6C435C11E9807BB003D8B84 /* Operation.swift in Sources */,
 				B6C435D01E98416D003D8B84 /* RegisterOperation.swift in Sources */,
 				B643533F1E94555A00472091 /* ChatsViewController.swift in Sources */,
 				B6C435C71E98195B003D8B84 /* LoginOperation.swift in Sources */,
+				B6C8E2301E9874E00014FD9D /* ChatMessageListOperation.swift in Sources */,
 				B643537B1E95249500472091 /* ChatView.swift in Sources */,
 				B643533E1E94555A00472091 /* ChatsDatasource.swift in Sources */,
+				B6C8E22C1E9852230014FD9D /* MessageParser.swift in Sources */,
 				B643537D1E9526C400472091 /* BubbleView.swift in Sources */,
+				B6C8E2261E9849CA0014FD9D /* ChatListRequest.swift in Sources */,
 				B64353FE1E95DCE800472091 /* RegisterViewController.swift in Sources */,
 				B643533C1E94555A00472091 /* Chat.swift in Sources */,
 				B643532F1E9441EC00472091 /* User.swift in Sources */,

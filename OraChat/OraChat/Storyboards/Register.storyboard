@@ -156,7 +156,7 @@
                         <outlet property="emailField" destination="Nxg-09-llm" id="cbX-Iy-GJr"/>
                         <outlet property="nameField" destination="CWg-Ss-SDR" id="ZWA-XR-GhB"/>
                         <outlet property="passwordField" destination="MYi-qd-FIC" id="2R0-aT-xPA"/>
-                        <segue destination="fmz-Uh-SBX" kind="show" identifier="Show Chats" id="5GF-v7-pSt"/>
+                        <segue destination="fmz-Uh-SBX" kind="presentation" identifier="Show Chats" id="5GF-v7-pSt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJ6-46-eL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
