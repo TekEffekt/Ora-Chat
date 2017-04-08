@@ -37,8 +37,8 @@ class ChatView: UIView {
         var drawPoint = CGPoint(x: horizontalMargin, y: topMargin)
         var drawOnLhs = true
         for message in messages {
-            var bubbleWidth: CGFloat = rect.width * 0.6
-            var bubbleHeight: CGFloat = 55
+            let bubbleWidth: CGFloat = BubbleView.bubbleWidth(forParentSize: bounds.size, andText: message.text)
+            let bubbleHeight: CGFloat = BubbleView.bubbleHeight(for: bubbleWidth, andText: message.text)
             if !drawOnLhs {
                 drawPoint.x = rect.width - horizontalMargin - bubbleWidth
             } else {
