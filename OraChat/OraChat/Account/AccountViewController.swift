@@ -35,4 +35,16 @@ class AccountViewController: UIViewController, DefaultTheme {
         emailField.text = user.email
     }
 
+    @IBAction func saveTapped(_ sender: UIBarButtonItem) {
+        guard let name = nameField.text else { return }
+        guard let email = emailField.text else { return }
+        guard let password = passwordField.text else { return }
+        guard let passwordConfirmation = confirmPasswordField.text else { return }
+        
+        let operation = RegisterOperation(name: name, email: email, password: password, passwordConfirmation: passwordConfirmation)
+        operation.execute { (user) in
+            print(user)
+        }
+
+    }
 }

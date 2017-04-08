@@ -69,6 +69,8 @@
 		B6C8E2421E98B4D70014FD9D /* CreateMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2411E98B4D70014FD9D /* CreateMessageTableViewController.swift */; };
 		B6C8E2441E98B5820014FD9D /* CreateMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2431E98B5820014FD9D /* CreateMessageRequest.swift */; };
 		B6C8E2461E98B5F60014FD9D /* CreateMessageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2451E98B5F60014FD9D /* CreateMessageOperation.swift */; };
+		B6C8E2481E98B85B0014FD9D /* UpdateProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2471E98B85B0014FD9D /* UpdateProfileRequest.swift */; };
+		B6C8E24A1E98B9880014FD9D /* UpdateProfileOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2491E98B9880014FD9D /* UpdateProfileOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +159,8 @@
 		B6C8E2411E98B4D70014FD9D /* CreateMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMessageTableViewController.swift; sourceTree = "<group>"; };
 		B6C8E2431E98B5820014FD9D /* CreateMessageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMessageRequest.swift; sourceTree = "<group>"; };
 		B6C8E2451E98B5F60014FD9D /* CreateMessageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMessageOperation.swift; sourceTree = "<group>"; };
+		B6C8E2471E98B85B0014FD9D /* UpdateProfileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileRequest.swift; sourceTree = "<group>"; };
+		B6C8E2491E98B9880014FD9D /* UpdateProfileOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +374,7 @@
 			children = (
 				B6C435C31E980815003D8B84 /* LoginRequest.swift */,
 				B6C435CD1E984050003D8B84 /* RegisterRequest.swift */,
+				B6C8E2471E98B85B0014FD9D /* UpdateProfileRequest.swift */,
 				B6C8E2251E9849CA0014FD9D /* ChatListRequest.swift */,
 				B6C8E22D1E98724B0014FD9D /* ChatMessageListRequest.swift */,
 				B6C8E2311E987C870014FD9D /* ReadProfileRequest.swift */,
@@ -384,6 +389,7 @@
 			children = (
 				B6C435C61E98195B003D8B84 /* LoginOperation.swift */,
 				B6C435CF1E98416D003D8B84 /* RegisterOperation.swift */,
+				B6C8E2491E98B9880014FD9D /* UpdateProfileOperation.swift */,
 				B6C8E2271E984C5E0014FD9D /* ChatListOperation.swift */,
 				B6C8E22F1E9874E00014FD9D /* ChatMessageListOperation.swift */,
 				B6C8E2331E987D590014FD9D /* ReadProfileOperation.swift */,
@@ -558,6 +564,7 @@
 				B6C8E2281E984C5E0014FD9D /* ChatListOperation.swift in Sources */,
 				B6C435C11E9807BB003D8B84 /* Operation.swift in Sources */,
 				B6C435D01E98416D003D8B84 /* RegisterOperation.swift in Sources */,
+				B6C8E24A1E98B9880014FD9D /* UpdateProfileOperation.swift in Sources */,
 				B643533F1E94555A00472091 /* ChatsViewController.swift in Sources */,
 				B6C435C71E98195B003D8B84 /* LoginOperation.swift in Sources */,
 				B6C8E2421E98B4D70014FD9D /* CreateMessageTableViewController.swift in Sources */,
@@ -587,6 +594,7 @@
 				B6C8E23E1E98AF0D0014FD9D /* CreateChatRequest.swift in Sources */,
 				B6C435B51E97E8A0003D8B84 /* RequestParameters.swift in Sources */,
 				B6C435BF1E97EDE1003D8B84 /* NetworkErrors.swift in Sources */,
+				B6C8E2481E98B85B0014FD9D /* UpdateProfileRequest.swift in Sources */,
 				B6C8E2461E98B5F60014FD9D /* CreateMessageOperation.swift in Sources */,
 				B6C435B71E97E8E9003D8B84 /* Dispatcher.swift in Sources */,
 				B64353F11E95CE3200472091 /* Date+TimeDifDisplay.swift in Sources */,

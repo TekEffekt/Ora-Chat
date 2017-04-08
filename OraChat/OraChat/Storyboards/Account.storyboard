@@ -144,7 +144,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="Account" id="Fgo-ZN-XRw"/>
                     <navigationItem key="navigationItem" title="My Account" id="3KN-gK-OyF">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="BCB-fQ-tjP"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="BCB-fQ-tjP">
+                            <connections>
+                                <action selector="saveTapped:" destination="GrD-cD-mm8" id="fRv-ZU-jat"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
