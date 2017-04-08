@@ -31,6 +31,9 @@ class ChatsViewController: UIViewController, UITableViewDelegate, DefaultTheme {
         performSegue(withIdentifier: "Show Chat Detail", sender: self)
     }
     
+    @IBAction func plusButtonTapped(_ sender: UIButton) {
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detail = segue.destination as? ChatDetailViewController {
             detail.chat = chatsDatasource.getChat(for: chosenIndexPath!)

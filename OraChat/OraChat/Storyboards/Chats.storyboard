@@ -43,7 +43,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oh hey!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bX-XJ-XYI">
-                                                    <rect key="frame" x="8" y="53.5" width="359" height="18"/>
+                                                    <rect key="frame" x="8" y="53" width="359" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="AqG-fv-ghp"/>
                                                     </constraints>
@@ -81,6 +81,17 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jS1-Ub-OW7">
+                                <rect key="frame" x="321" y="564" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="bpa-cU-xcf"/>
+                                    <constraint firstAttribute="height" constant="44" id="eeH-Of-cTm"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Plus"/>
+                                <connections>
+                                    <action selector="plusButtonTapped:" destination="85P-lx-e4m" eventType="touchUpInside" id="9W8-Uh-5V0"/>
+                                </connections>
+                            </button>
                             <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="ycj-il-WQq">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                 <constraints>
@@ -92,10 +103,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ycj-il-WQq" firstAttribute="leading" secondItem="9VG-IU-3q5" secondAttribute="leading" id="COv-wi-zX7"/>
+                            <constraint firstItem="Fgh-vX-5zK" firstAttribute="top" secondItem="jS1-Ub-OW7" secondAttribute="bottom" constant="10" id="IQt-hR-lvD"/>
                             <constraint firstItem="rdx-W8-RgV" firstAttribute="width" secondItem="9VG-IU-3q5" secondAttribute="width" id="Omm-Lf-6cR"/>
                             <constraint firstItem="rdx-W8-RgV" firstAttribute="top" secondItem="ycj-il-WQq" secondAttribute="bottom" id="Pl6-2j-kdv"/>
                             <constraint firstItem="Fgh-vX-5zK" firstAttribute="top" secondItem="rdx-W8-RgV" secondAttribute="bottom" id="Qpg-6p-gkT"/>
                             <constraint firstItem="ycj-il-WQq" firstAttribute="top" secondItem="wR9-fe-FTt" secondAttribute="bottom" id="duo-1u-pVK"/>
+                            <constraint firstAttribute="trailing" secondItem="jS1-Ub-OW7" secondAttribute="trailing" constant="10" id="hbT-a1-xqe"/>
                             <constraint firstAttribute="trailing" secondItem="ycj-il-WQq" secondAttribute="trailing" id="iWr-ZW-bnr"/>
                             <constraint firstItem="rdx-W8-RgV" firstAttribute="centerX" secondItem="9VG-IU-3q5" secondAttribute="centerX" id="uiz-Mz-Rps"/>
                         </constraints>
@@ -141,5 +154,6 @@
     </scenes>
     <resources>
         <image name="Chats" width="25" height="25"/>
+        <image name="Plus" width="60" height="60"/>
     </resources>
 </document>
