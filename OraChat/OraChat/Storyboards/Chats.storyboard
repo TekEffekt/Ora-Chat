@@ -114,7 +114,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="OraChat" id="Sj2-hd-WUT">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Y9e-jt-rYZ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Y9e-jt-rYZ">
+                            <connections>
+                                <action selector="searchTapped:" destination="85P-lx-e4m" id="fkm-fz-Mre"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

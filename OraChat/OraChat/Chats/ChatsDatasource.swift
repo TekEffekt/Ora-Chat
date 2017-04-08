@@ -9,14 +9,17 @@
 import Foundation
 import UIKit
 
-class ChatsDatasource: NSObject, UITableViewDataSource {
+class ChatsDatasource: NSObject, UITableViewDataSource, UISearchResultsUpdating {
     
     private var organizedChats: [ChatsOnDay]
+    private var filteredChats: [ChatsOnDay] = []
     let tableView: UITableView
+    let searchBar: UISearchBar
     
-    init(organizedChats: [ChatsOnDay] = [], tableView: UITableView) {
+    init(organizedChats: [ChatsOnDay] = [], tableView: UITableView, searchBar: UISearchBar) {
         self.organizedChats = organizedChats
         self.tableView = tableView
+        self.searchBar = searchBar
         super.init()
         downloadChats()
     }
@@ -32,17 +35,17 @@ class ChatsDatasource: NSObject, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return organizedChats.count
+        return getOrganizedChats().count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let chatsOnDay = organizedChats[section]
+        let chatsOnDay = getOrganizedChats()[section]
         return chatsOnDay.chats.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let chatCell = tableView.dequeueReusableCell(withIdentifier: "Chat Cell") as? ChatCell else { return UITableViewCell() }
-        let chat = organizedChats[indexPath.section].chats[indexPath.row]
+        let chat = getOrganizedChats()[indexPath.section].chats[indexPath.row]
         chatCell.chatNameLabel.text = chat.name
         chatCell.lastMessageMetaLabel.text = chat.lastMessage.getMetaData()
         chatCell.messageTextLabel.text = chat.lastMessage.text
@@ -50,11 +53,26 @@ class ChatsDatasource: NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return organizedChats[section].day
+        return getOrganizedChats()[section].day
     }
     
     func getChat(for indexPath: IndexPath) -> Chat {
-        return organizedChats[indexPath.section].chats[indexPath.row]
+        return getOrganizedChats()[indexPath.section].chats[indexPath.row]
+    }
+    
+    private func getOrganizedChats() -> [ChatsOnDay] {
+        if searchBar.isFirstResponder {
+            return filteredChats
+        } else {
+            return organizedChats
+        }
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchText = searchController.searchBar.text
+        let strippedText = searchText!.trimmingCharacters(in: CharacterSet.whitespaces)
+        filteredChats = SearchLogic.filter(chatsOnDays: organizedChats, with: strippedText)
+        tableView.reloadData()
     }
     
 }

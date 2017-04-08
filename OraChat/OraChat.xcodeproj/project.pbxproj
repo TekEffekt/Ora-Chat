@@ -71,6 +71,9 @@
 		B6C8E2461E98B5F60014FD9D /* CreateMessageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2451E98B5F60014FD9D /* CreateMessageOperation.swift */; };
 		B6C8E2481E98B85B0014FD9D /* UpdateProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2471E98B85B0014FD9D /* UpdateProfileRequest.swift */; };
 		B6C8E24A1E98B9880014FD9D /* UpdateProfileOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2491E98B9880014FD9D /* UpdateProfileOperation.swift */; };
+		B6C8E24C1E98BC000014FD9D /* MySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E24B1E98BBFF0014FD9D /* MySearchController.swift */; };
+		B6C8E24E1E98BC200014FD9D /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E24D1E98BC200014FD9D /* CustomSearchBar.swift */; };
+		B6C8E2501E98C39C0014FD9D /* SearchLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E24F1E98C39C0014FD9D /* SearchLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +164,9 @@
 		B6C8E2451E98B5F60014FD9D /* CreateMessageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMessageOperation.swift; sourceTree = "<group>"; };
 		B6C8E2471E98B85B0014FD9D /* UpdateProfileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileRequest.swift; sourceTree = "<group>"; };
 		B6C8E2491E98B9880014FD9D /* UpdateProfileOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileOperation.swift; sourceTree = "<group>"; };
+		B6C8E24B1E98BBFF0014FD9D /* MySearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySearchController.swift; sourceTree = "<group>"; };
+		B6C8E24D1E98BC200014FD9D /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		B6C8E24F1E98C39C0014FD9D /* SearchLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,7 @@
 				B643533A1E94555A00472091 /* ChatsDatasource.swift */,
 				B643533B1E94555A00472091 /* ChatsViewController.swift */,
 				B6C8E23B1E98ACB00014FD9D /* CreateChatViewController.swift */,
+				B6C8E24F1E98C39C0014FD9D /* SearchLogic.swift */,
 			);
 			path = Chats;
 			sourceTree = "<group>";
@@ -235,6 +242,8 @@
 		B643536E1E94A21400472091 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B6C8E24B1E98BBFF0014FD9D /* MySearchController.swift */,
+				B6C8E24D1E98BC200014FD9D /* CustomSearchBar.swift */,
 				B64353EF1E95CE3200472091 /* Date+TimeDifDisplay.swift */,
 				B64353F31E95CE7800472091 /* UI */,
 			);
@@ -299,8 +308,8 @@
 				B64353FA1E95DBAD00472091 /* Login & Register */,
 				B643536E1E94A21400472091 /* Core */,
 				B643532D1E9441CA00472091 /* Account */,
-				B64353301E94425F00472091 /* Chat Detail */,
 				B64353371E94555A00472091 /* Chats */,
+				B64353301E94425F00472091 /* Chat Detail */,
 				B66521011E931AC60040A01A /* Storyboards */,
 			);
 			path = OraChat;
@@ -566,6 +575,7 @@
 				B6C435D01E98416D003D8B84 /* RegisterOperation.swift in Sources */,
 				B6C8E24A1E98B9880014FD9D /* UpdateProfileOperation.swift in Sources */,
 				B643533F1E94555A00472091 /* ChatsViewController.swift in Sources */,
+				B6C8E24C1E98BC000014FD9D /* MySearchController.swift in Sources */,
 				B6C435C71E98195B003D8B84 /* LoginOperation.swift in Sources */,
 				B6C8E2421E98B4D70014FD9D /* CreateMessageTableViewController.swift in Sources */,
 				B6C8E2301E9874E00014FD9D /* ChatMessageListOperation.swift in Sources */,
@@ -578,11 +588,13 @@
 				B6C8E2401E98AF7B0014FD9D /* CreateChatOperation.swift in Sources */,
 				B6C8E23C1E98ACB00014FD9D /* CreateChatViewController.swift in Sources */,
 				B64353FE1E95DCE800472091 /* RegisterViewController.swift in Sources */,
+				B6C8E2501E98C39C0014FD9D /* SearchLogic.swift in Sources */,
 				B643533C1E94555A00472091 /* Chat.swift in Sources */,
 				B643532F1E9441EC00472091 /* User.swift in Sources */,
 				B6C435B31E97E608003D8B84 /* HttpMethod.swift in Sources */,
 				B6C8E2341E987D590014FD9D /* ReadProfileOperation.swift in Sources */,
 				B6C435B11E97E548003D8B84 /* Request.swift in Sources */,
+				B6C8E24E1E98BC200014FD9D /* CustomSearchBar.swift in Sources */,
 				B6C435CC1E982B74003D8B84 /* Parser.swift in Sources */,
 				B64353741E94BF9C00472091 /* ChatsOnDay.swift in Sources */,
 				B64353F71E95CE9700472091 /* UIColor+AppColors.swift in Sources */,
