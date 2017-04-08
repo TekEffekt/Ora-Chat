@@ -1,15 +1,16 @@
 //
-//  LoginTests.swift
+//  UpdateProfileOperation.swift
 //  OraChat
 //
 //  Created by Kyle Zawacki on 4/8/17.
 //
 //
 
+import Foundation
 import XCTest
 @testable import OraChat
 
-class LoginMock: Dispatcher {
+class UpdateProfileMock: Dispatcher {
     
     var configuration: NetworkConfiguration
     
@@ -32,13 +33,13 @@ class LoginMock: Dispatcher {
     
 }
 
-class LoginTests: XCTestCase {
+class UpdateProfileTests: XCTestCase {
     
-    let mock = LoginMock()
+    let mock = UpdateProfileMock()
     
     func testOperation() {
-        let op = LoginOperation(email: "z95sk8@outlook.com", password: "123")
-        let expect = expectation(description: "calls the callback with a native object object")
+        let op = UpdateProfileOperation(name: "Kyle", email: "z95sk8@outlook.com", password: "123", passwordConfirmation: "123")
+        let expect = expectation(description: "Calls the callback with a native object")
         op.execute(in: mock) { (user) in
             XCTAssertEqual(user.id, 1)
             XCTAssertEqual(user.name, "Alex Patoka")

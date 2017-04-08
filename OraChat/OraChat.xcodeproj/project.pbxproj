@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B639A42E1E9927A20007AFF2 /* RegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639A42D1E9927A20007AFF2 /* RegisterTests.swift */; };
+		B639A4301E9929140007AFF2 /* ReadProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639A42F1E9929140007AFF2 /* ReadProfileTests.swift */; };
+		B639A4321E9929C90007AFF2 /* UpdateProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639A4311E9929C90007AFF2 /* UpdateProfileTests.swift */; };
+		B639A4341E992A770007AFF2 /* ChatListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639A4331E992A770007AFF2 /* ChatListTests.swift */; };
+		B639A4361E992ABD0007AFF2 /* chat list.json in Resources */ = {isa = PBXBuildFile; fileRef = B639A4351E992ABD0007AFF2 /* chat list.json */; };
+		B639A4381E992E800007AFF2 /* message list.json in Resources */ = {isa = PBXBuildFile; fileRef = B639A4371E992E800007AFF2 /* message list.json */; };
+		B639A43A1E992E910007AFF2 /* MessageListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639A4391E992E910007AFF2 /* MessageListTests.swift */; };
 		B64353291E94408F00472091 /* ChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353281E94408F00472091 /* ChatTests.swift */; };
 		B643532C1E9440A900472091 /* ChatsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643532B1E9440A900472091 /* ChatsViewControllerTests.swift */; };
 		B643532F1E9441EC00472091 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643532E1E9441EC00472091 /* User.swift */; };
@@ -74,7 +81,7 @@
 		B6C8E24E1E98BC200014FD9D /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E24D1E98BC200014FD9D /* CustomSearchBar.swift */; };
 		B6C8E2501E98C39C0014FD9D /* SearchLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E24F1E98C39C0014FD9D /* SearchLogic.swift */; };
 		B6C8E25B1E98CF980014FD9D /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E25A1E98CF980014FD9D /* LoginTests.swift */; };
-		B6C8E2601E98D6B50014FD9D /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = B6C8E25F1E98D6B50014FD9D /* login.json */; };
+		B6C8E2601E98D6B50014FD9D /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = B6C8E25F1E98D6B50014FD9D /* user.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +102,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B639A42D1E9927A20007AFF2 /* RegisterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTests.swift; sourceTree = "<group>"; };
+		B639A42F1E9929140007AFF2 /* ReadProfileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadProfileTests.swift; sourceTree = "<group>"; };
+		B639A4311E9929C90007AFF2 /* UpdateProfileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileTests.swift; sourceTree = "<group>"; };
+		B639A4331E992A770007AFF2 /* ChatListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListTests.swift; sourceTree = "<group>"; };
+		B639A4351E992ABD0007AFF2 /* chat list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "chat list.json"; sourceTree = "<group>"; };
+		B639A4371E992E800007AFF2 /* message list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "message list.json"; sourceTree = "<group>"; };
+		B639A4391E992E910007AFF2 /* MessageListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListTests.swift; sourceTree = "<group>"; };
 		B64353281E94408F00472091 /* ChatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatTests.swift; path = Chats/ChatTests.swift; sourceTree = "<group>"; };
 		B643532B1E9440A900472091 /* ChatsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatsViewControllerTests.swift; path = Chats/ChatsViewControllerTests.swift; sourceTree = "<group>"; };
 		B643532E1E9441EC00472091 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Account/User.swift; sourceTree = "<group>"; };
@@ -168,7 +182,7 @@
 		B6C8E24D1E98BC200014FD9D /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		B6C8E24F1E98C39C0014FD9D /* SearchLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLogic.swift; sourceTree = "<group>"; };
 		B6C8E25A1E98CF980014FD9D /* LoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginTests.swift; path = "Network Layer Tests/LoginTests.swift"; sourceTree = "<group>"; };
-		B6C8E25F1E98D6B50014FD9D /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
+		B6C8E25F1E98D6B50014FD9D /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,6 +439,11 @@
 			children = (
 				B6C8E25E1E98D6B50014FD9D /* Mock JSON */,
 				B6C8E25A1E98CF980014FD9D /* LoginTests.swift */,
+				B639A42D1E9927A20007AFF2 /* RegisterTests.swift */,
+				B639A42F1E9929140007AFF2 /* ReadProfileTests.swift */,
+				B639A4311E9929C90007AFF2 /* UpdateProfileTests.swift */,
+				B639A4331E992A770007AFF2 /* ChatListTests.swift */,
+				B639A4391E992E910007AFF2 /* MessageListTests.swift */,
 			);
 			name = "Network Layer Tests";
 			sourceTree = "<group>";
@@ -432,7 +451,9 @@
 		B6C8E25E1E98D6B50014FD9D /* Mock JSON */ = {
 			isa = PBXGroup;
 			children = (
-				B6C8E25F1E98D6B50014FD9D /* login.json */,
+				B639A4371E992E800007AFF2 /* message list.json */,
+				B639A4351E992ABD0007AFF2 /* chat list.json */,
+				B6C8E25F1E98D6B50014FD9D /* user.json */,
 			);
 			name = "Mock JSON";
 			path = "Network Layer Tests/Mock JSON";
@@ -564,7 +585,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C8E2601E98D6B50014FD9D /* login.json in Resources */,
+				B639A4361E992ABD0007AFF2 /* chat list.json in Resources */,
+				B6C8E2601E98D6B50014FD9D /* user.json in Resources */,
+				B639A4381E992E800007AFF2 /* message list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,10 +663,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B639A42E1E9927A20007AFF2 /* RegisterTests.swift in Sources */,
+				B639A4301E9929140007AFF2 /* ReadProfileTests.swift in Sources */,
 				B64353771E94C39600472091 /* ChatDetailViewControllerTests.swift in Sources */,
+				B639A4321E9929C90007AFF2 /* UpdateProfileTests.swift in Sources */,
+				B639A43A1E992E910007AFF2 /* MessageListTests.swift in Sources */,
 				B64353341E944D4800472091 /* ChatsDatasourceTests.swift in Sources */,
 				B64353411E94752500472091 /* MockData.swift in Sources */,
 				B643532C1E9440A900472091 /* ChatsViewControllerTests.swift in Sources */,
+				B639A4341E992A770007AFF2 /* ChatListTests.swift in Sources */,
 				B6C8E25B1E98CF980014FD9D /* LoginTests.swift in Sources */,
 				B64353291E94408F00472091 /* ChatTests.swift in Sources */,
 			);

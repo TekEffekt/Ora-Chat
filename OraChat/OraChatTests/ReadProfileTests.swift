@@ -1,15 +1,16 @@
 //
-//  LoginTests.swift
+//  ReadProfileTests.swift
 //  OraChat
 //
 //  Created by Kyle Zawacki on 4/8/17.
 //
 //
 
+import Foundation
 import XCTest
 @testable import OraChat
 
-class LoginMock: Dispatcher {
+class ReadProfileMock: Dispatcher {
     
     var configuration: NetworkConfiguration
     
@@ -32,13 +33,13 @@ class LoginMock: Dispatcher {
     
 }
 
-class LoginTests: XCTestCase {
+class ReadProfileTests: XCTestCase {
     
-    let mock = LoginMock()
+    let mock = ReadProfileMock()
     
     func testOperation() {
-        let op = LoginOperation(email: "z95sk8@outlook.com", password: "123")
-        let expect = expectation(description: "calls the callback with a native object object")
+        let op = ReadProfileOperation()
+        let expect = expectation(description: "Calls the callback with a native object")
         op.execute(in: mock) { (user) in
             XCTAssertEqual(user.id, 1)
             XCTAssertEqual(user.name, "Alex Patoka")

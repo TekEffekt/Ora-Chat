@@ -1,15 +1,16 @@
 //
-//  LoginTests.swift
+//  MessageListTests.swift
 //  OraChat
 //
 //  Created by Kyle Zawacki on 4/8/17.
 //
 //
 
+import Foundation
 import XCTest
 @testable import OraChat
 
-class LoginMock: Dispatcher {
+class MessageListMock: Dispatcher {
     
     var configuration: NetworkConfiguration
     
@@ -19,12 +20,13 @@ class LoginMock: Dispatcher {
     
     func execute(request: Request, completionHandler: @escaping ((Response) -> Void)) throws {
         let testBundle = Bundle(for: type(of: self))
-        guard let path = testBundle.path(forResource: "user", ofType: "json") else {
+        guard let path = testBundle.path(forResource: "message list", ofType: "json") else {
             return
         }
         
         let mockData = NSData(contentsOfFile: path)
-        let resp = HTTPURLResponse(url: URL(string: path)!, statusCode: 200, httpVersion: nil, headerFields: nil)
+        let fakeUrl = URL(fileURLWithPath: path)
+        let resp = HTTPURLResponse(url: fakeUrl, statusCode: 200, httpVersion: nil, headerFields: nil)
         
         let response = Response(urlResponse: resp, data: mockData as Data?, error: nil, for: request)
         completionHandler(response)
@@ -32,14 +34,21 @@ class LoginMock: Dispatcher {
     
 }
 
-class LoginTests: XCTestCase {
+class MessageListTests: XCTestCase {
     
-    let mock = LoginMock()
+    let mock = MessageListMock()
     
     func testOperation() {
-        let op = LoginOperation(email: "z95sk8@outlook.com", password: "123")
-        let expect = expectation(description: "calls the callback with a native object object")
-        op.execute(in: mock) { (user) in
+        let op = ChatMessageListOperation(id: 1, page: 1, limit: 50)
+        let expect = expectation(description: "Calls the callback with a native object")
+        op.execute(in: mock) { (messages) in
+            XCTAssertEqual(messages.count, 4)
+            let message = messages.first!
+            XCTAssertEqual(message.id, 1)
+            XCTAssertEqual(message.chatId, 1)
+            XCTAssertEqual(message.userId, 1)
+            XCTAssertEqual(message.text, "What are you doing later today?")
+            let user = message.user
             XCTAssertEqual(user.id, 1)
             XCTAssertEqual(user.name, "Alex Patoka")
             XCTAssertEqual(user.email, "alex@orainteractive.com")
