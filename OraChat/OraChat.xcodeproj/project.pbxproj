@@ -17,7 +17,6 @@
 		B643533E1E94555A00472091 /* ChatsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643533A1E94555A00472091 /* ChatsDatasource.swift */; };
 		B643533F1E94555A00472091 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643533B1E94555A00472091 /* ChatsViewController.swift */; };
 		B64353411E94752500472091 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353401E94752500472091 /* MockData.swift */; };
-		B64353721E94B55800472091 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353711E94B55800472091 /* DummyData.swift */; };
 		B64353741E94BF9C00472091 /* ChatsOnDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353731E94BF9C00472091 /* ChatsOnDay.swift */; };
 		B64353771E94C39600472091 /* ChatDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353761E94C39600472091 /* ChatDetailViewControllerTests.swift */; };
 		B64353791E94C3CF00472091 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353781E94C3CF00472091 /* ChatDetailViewController.swift */; };
@@ -60,6 +59,8 @@
 		B6C8E22C1E9852230014FD9D /* MessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E22B1E9852230014FD9D /* MessageParser.swift */; };
 		B6C8E22E1E98724B0014FD9D /* ChatMessageListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E22D1E98724B0014FD9D /* ChatMessageListRequest.swift */; };
 		B6C8E2301E9874E00014FD9D /* ChatMessageListOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E22F1E9874E00014FD9D /* ChatMessageListOperation.swift */; };
+		B6C8E2321E987C870014FD9D /* ReadProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2311E987C870014FD9D /* ReadProfileRequest.swift */; };
+		B6C8E2341E987D590014FD9D /* ReadProfileOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2331E987D590014FD9D /* ReadProfileOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +91,6 @@
 		B643533A1E94555A00472091 /* ChatsDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDatasource.swift; sourceTree = "<group>"; };
 		B643533B1E94555A00472091 /* ChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		B64353401E94752500472091 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
-		B64353711E94B55800472091 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		B64353731E94BF9C00472091 /* ChatsOnDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsOnDay.swift; sourceTree = "<group>"; };
 		B64353761E94C39600472091 /* ChatDetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatDetailViewControllerTests.swift; path = "Chat Detail/ChatDetailViewControllerTests.swift"; sourceTree = "<group>"; };
 		B64353781E94C3CF00472091 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +139,8 @@
 		B6C8E22B1E9852230014FD9D /* MessageParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageParser.swift; sourceTree = "<group>"; };
 		B6C8E22D1E98724B0014FD9D /* ChatMessageListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageListRequest.swift; sourceTree = "<group>"; };
 		B6C8E22F1E9874E00014FD9D /* ChatMessageListOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageListOperation.swift; sourceTree = "<group>"; };
+		B6C8E2311E987C870014FD9D /* ReadProfileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadProfileRequest.swift; sourceTree = "<group>"; };
+		B6C8E2331E987D590014FD9D /* ReadProfileOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadProfileOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,7 +273,6 @@
 				B66520DD1E9305850040A01A /* Info.plist */,
 				B66520D81E9305850040A01A /* Assets.xcassets */,
 				B66520D11E9305850040A01A /* AppDelegate.swift */,
-				B64353711E94B55800472091 /* DummyData.swift */,
 				B6C435AE1E970EE1003D8B84 /* Network Layer */,
 				B64353FA1E95DBAD00472091 /* Login & Register */,
 				B643536E1E94A21400472091 /* Core */,
@@ -351,6 +352,7 @@
 				B6C435CD1E984050003D8B84 /* RegisterRequest.swift */,
 				B6C8E2251E9849CA0014FD9D /* ChatListRequest.swift */,
 				B6C8E22D1E98724B0014FD9D /* ChatMessageListRequest.swift */,
+				B6C8E2311E987C870014FD9D /* ReadProfileRequest.swift */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -362,6 +364,7 @@
 				B6C435CF1E98416D003D8B84 /* RegisterOperation.swift */,
 				B6C8E2271E984C5E0014FD9D /* ChatListOperation.swift */,
 				B6C8E22F1E9874E00014FD9D /* ChatMessageListOperation.swift */,
+				B6C8E2331E987D590014FD9D /* ReadProfileOperation.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -534,12 +537,14 @@
 				B643537B1E95249500472091 /* ChatView.swift in Sources */,
 				B643533E1E94555A00472091 /* ChatsDatasource.swift in Sources */,
 				B6C8E22C1E9852230014FD9D /* MessageParser.swift in Sources */,
+				B6C8E2321E987C870014FD9D /* ReadProfileRequest.swift in Sources */,
 				B643537D1E9526C400472091 /* BubbleView.swift in Sources */,
 				B6C8E2261E9849CA0014FD9D /* ChatListRequest.swift in Sources */,
 				B64353FE1E95DCE800472091 /* RegisterViewController.swift in Sources */,
 				B643533C1E94555A00472091 /* Chat.swift in Sources */,
 				B643532F1E9441EC00472091 /* User.swift in Sources */,
 				B6C435B31E97E608003D8B84 /* HttpMethod.swift in Sources */,
+				B6C8E2341E987D590014FD9D /* ReadProfileOperation.swift in Sources */,
 				B6C435B11E97E548003D8B84 /* Request.swift in Sources */,
 				B6C435CC1E982B74003D8B84 /* Parser.swift in Sources */,
 				B64353741E94BF9C00472091 /* ChatsOnDay.swift in Sources */,
@@ -552,7 +557,6 @@
 				B6C435B51E97E8A0003D8B84 /* RequestParameters.swift in Sources */,
 				B6C435BF1E97EDE1003D8B84 /* NetworkErrors.swift in Sources */,
 				B6C435B71E97E8E9003D8B84 /* Dispatcher.swift in Sources */,
-				B64353721E94B55800472091 /* DummyData.swift in Sources */,
 				B64353F11E95CE3200472091 /* Date+TimeDifDisplay.swift in Sources */,
 				B6C435CE1E984050003D8B84 /* RegisterRequest.swift in Sources */,
 				B66520D21E9305850040A01A /* AppDelegate.swift in Sources */,

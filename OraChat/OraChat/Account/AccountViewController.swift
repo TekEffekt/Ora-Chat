@@ -18,11 +18,21 @@ class AccountViewController: UIViewController, DefaultTheme {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         applyTheme()
-        
-        if let currentUser = User.loggedInUser {
-            nameField.text = currentUser.name
-            emailField.text = currentUser.email
+        readCurrentUser()
+    }
+    
+    private func readCurrentUser() {
+        let readUserOp = ReadProfileOperation()
+        readUserOp.execute { (user) in
+            OperationQueue.main.addOperation {
+                self.setFields(for: user)
+            }
         }
+    }
+    
+    private func setFields(for user: User) {
+        nameField.text = user.name
+        emailField.text = user.email
     }
 
 }
