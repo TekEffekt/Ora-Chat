@@ -12,11 +12,13 @@ import XCTest
 class ChatDetailViewControllerTests: XCTestCase {
     
     var detail: ChatDetailViewController!
+    let mockData = MockData()
     
     override func setUp() {
         super.setUp()
         let storyboard = UIStoryboard(name: "Chat Detail", bundle: nil)
         detail = storyboard.instantiateViewController(withIdentifier: "Chat Detail") as! ChatDetailViewController
+        detail.chat = mockData.chat
         UIApplication.shared.keyWindow!.rootViewController = detail
         let _ = detail.view
     }

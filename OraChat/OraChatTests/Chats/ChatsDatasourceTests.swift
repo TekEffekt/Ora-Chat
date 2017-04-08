@@ -17,7 +17,7 @@ class ChatsDatasourceTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        datasource = ChatsDatasource(organizedChats: mockData.organizedChats)
+        datasource = ChatsDatasource(organizedChats: mockData.organizedChats, tableView: UITableView(), searchBar: UISearchBar())
         let storyboard = UIStoryboard(name: "Chats", bundle: nil)
         chatsViewController = storyboard.instantiateViewController(withIdentifier: "Chats") as! ChatsViewController
         chatsViewController.chatsDatasource = datasource

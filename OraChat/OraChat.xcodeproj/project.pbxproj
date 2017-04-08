@@ -30,7 +30,6 @@
 		B64353FE1E95DCE800472091 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64353FD1E95DCE800472091 /* RegisterViewController.swift */; };
 		B66520D21E9305850040A01A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520D11E9305850040A01A /* AppDelegate.swift */; };
 		B66520D91E9305850040A01A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66520D81E9305850040A01A /* Assets.xcassets */; };
-		B66520F21E9305860040A01A /* OraChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66520F11E9305860040A01A /* OraChatUITests.swift */; };
 		B66521141E933BD30040A01A /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B665210E1E933BD30040A01A /* Account.storyboard */; };
 		B66521151E933BD30040A01A /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B665210F1E933BD30040A01A /* Base.storyboard */; };
 		B66521161E933BD30040A01A /* Chat Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66521101E933BD30040A01A /* Chat Detail.storyboard */; };
@@ -74,6 +73,8 @@
 		B6C8E24C1E98BC000014FD9D /* MySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E24B1E98BBFF0014FD9D /* MySearchController.swift */; };
 		B6C8E24E1E98BC200014FD9D /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E24D1E98BC200014FD9D /* CustomSearchBar.swift */; };
 		B6C8E2501E98C39C0014FD9D /* SearchLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E24F1E98C39C0014FD9D /* SearchLogic.swift */; };
+		B6C8E25B1E98CF980014FD9D /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E25A1E98CF980014FD9D /* LoginTests.swift */; };
+		B6C8E2601E98D6B50014FD9D /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = B6C8E25F1E98D6B50014FD9D /* login.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,7 +123,6 @@
 		B66520E21E9305860040A01A /* OraChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OraChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66520E81E9305860040A01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66520ED1E9305860040A01A /* OraChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OraChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B66520F11E9305860040A01A /* OraChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OraChatUITests.swift; sourceTree = "<group>"; };
 		B66520F31E9305860040A01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B665210E1E933BD30040A01A /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Account.storyboard; path = Storyboards/Account.storyboard; sourceTree = "<group>"; };
 		B665210F1E933BD30040A01A /* Base.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Base.storyboard; path = Storyboards/Base.storyboard; sourceTree = "<group>"; };
@@ -167,6 +167,8 @@
 		B6C8E24B1E98BBFF0014FD9D /* MySearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySearchController.swift; sourceTree = "<group>"; };
 		B6C8E24D1E98BC200014FD9D /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		B6C8E24F1E98C39C0014FD9D /* SearchLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLogic.swift; sourceTree = "<group>"; };
+		B6C8E25A1E98CF980014FD9D /* LoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginTests.swift; path = "Network Layer Tests/LoginTests.swift"; sourceTree = "<group>"; };
+		B6C8E25F1E98D6B50014FD9D /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				B64353401E94752500472091 /* MockData.swift */,
+				B6C8E2511E98C7F30014FD9D /* Network Layer Tests */,
 				B64353751E94C26300472091 /* Chat Detail */,
 				B643532A1E94409200472091 /* Chats */,
 				B66520E81E9305860040A01A /* Info.plist */,
@@ -329,7 +332,6 @@
 		B66520F01E9305860040A01A /* OraChatUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B66520F11E9305860040A01A /* OraChatUITests.swift */,
 				B66520F31E9305860040A01A /* Info.plist */,
 			);
 			path = OraChatUITests;
@@ -416,6 +418,24 @@
 				B6C8E22B1E9852230014FD9D /* MessageParser.swift */,
 			);
 			name = Parsers;
+			sourceTree = "<group>";
+		};
+		B6C8E2511E98C7F30014FD9D /* Network Layer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8E25E1E98D6B50014FD9D /* Mock JSON */,
+				B6C8E25A1E98CF980014FD9D /* LoginTests.swift */,
+			);
+			name = "Network Layer Tests";
+			sourceTree = "<group>";
+		};
+		B6C8E25E1E98D6B50014FD9D /* Mock JSON */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8E25F1E98D6B50014FD9D /* login.json */,
+			);
+			name = "Mock JSON";
+			path = "Network Layer Tests/Mock JSON";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,6 +564,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C8E2601E98D6B50014FD9D /* login.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +644,7 @@
 				B64353341E944D4800472091 /* ChatsDatasourceTests.swift in Sources */,
 				B64353411E94752500472091 /* MockData.swift in Sources */,
 				B643532C1E9440A900472091 /* ChatsViewControllerTests.swift in Sources */,
+				B6C8E25B1E98CF980014FD9D /* LoginTests.swift in Sources */,
 				B64353291E94408F00472091 /* ChatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,7 +653,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66520F21E9305860040A01A /* OraChatUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

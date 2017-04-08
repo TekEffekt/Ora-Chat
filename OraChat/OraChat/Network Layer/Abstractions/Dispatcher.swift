@@ -10,6 +10,8 @@ import Foundation
 
 protocol Dispatcher {
     
+    var configuration: NetworkConfiguration { get }
+    
     init(configuration: NetworkConfiguration)
     func execute(request: Request, completionHandler: @escaping ((Response) -> Void)) throws
     

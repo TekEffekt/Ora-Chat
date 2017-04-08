@@ -21,6 +21,7 @@ class ChatsViewController: UIViewController, UITableViewDelegate, DefaultTheme {
     override func viewDidLoad() {
         super.viewDidLoad()
         chatsTableView.delegate = self
+        self.definesPresentationContext = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,6 +30,11 @@ class ChatsViewController: UIViewController, UITableViewDelegate, DefaultTheme {
         chatsTableView.dataSource = chatsDatasource
         searchController.searchResultsUpdater = chatsDatasource
         applyTheme()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        clearSearch()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -68,6 +74,8 @@ class ChatsViewController: UIViewController, UITableViewDelegate, DefaultTheme {
         navigationItem.titleView = nil
         navigationItem.title = "OraChat"
         navigationItem.rightBarButtonItem = searchButton
+        searchController.searchBar.text = nil
+        chatsTableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

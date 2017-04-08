@@ -11,7 +11,7 @@ import UIKit
 
 class ChatsDatasource: NSObject, UITableViewDataSource, UISearchResultsUpdating {
     
-    private var organizedChats: [ChatsOnDay]
+    var organizedChats: [ChatsOnDay]
     private var filteredChats: [ChatsOnDay] = []
     let tableView: UITableView
     let searchBar: UISearchBar

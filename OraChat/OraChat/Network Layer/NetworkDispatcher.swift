@@ -10,7 +10,7 @@ import Foundation
 
 class NetworkDispatcher: Dispatcher {
     
-    private var configuration: NetworkConfiguration
+    var configuration: NetworkConfiguration
     private var session: URLSession
     
     required init(configuration: NetworkConfiguration = NetworkConfiguration.shared) {

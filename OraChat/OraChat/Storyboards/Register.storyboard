@@ -143,7 +143,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="Account" id="JXy-MW-qQB"/>
-                    <navigationItem key="navigationItem" title="Title" id="K3T-jh-9Fs">
+                    <navigationItem key="navigationItem" title="Register" id="K3T-jh-9Fs">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="cGR-BH-Lho">
                             <connections>
                                 <action selector="submitTapped:" destination="ogb-Qf-v5T" id="aX1-eF-lum"/>
