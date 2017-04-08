@@ -82,7 +82,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jS1-Ub-OW7">
-                                <rect key="frame" x="321" y="564" width="44" height="44"/>
+                                <rect key="frame" x="319" y="563" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="bpa-cU-xcf"/>
                                     <constraint firstAttribute="height" constant="44" id="eeH-Of-cTm"/>
@@ -103,12 +103,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ycj-il-WQq" firstAttribute="leading" secondItem="9VG-IU-3q5" secondAttribute="leading" id="COv-wi-zX7"/>
-                            <constraint firstItem="Fgh-vX-5zK" firstAttribute="top" secondItem="jS1-Ub-OW7" secondAttribute="bottom" constant="10" id="IQt-hR-lvD"/>
+                            <constraint firstItem="Fgh-vX-5zK" firstAttribute="top" secondItem="jS1-Ub-OW7" secondAttribute="bottom" constant="11" id="IQt-hR-lvD"/>
                             <constraint firstItem="rdx-W8-RgV" firstAttribute="width" secondItem="9VG-IU-3q5" secondAttribute="width" id="Omm-Lf-6cR"/>
                             <constraint firstItem="rdx-W8-RgV" firstAttribute="top" secondItem="ycj-il-WQq" secondAttribute="bottom" id="Pl6-2j-kdv"/>
                             <constraint firstItem="Fgh-vX-5zK" firstAttribute="top" secondItem="rdx-W8-RgV" secondAttribute="bottom" id="Qpg-6p-gkT"/>
                             <constraint firstItem="ycj-il-WQq" firstAttribute="top" secondItem="wR9-fe-FTt" secondAttribute="bottom" id="duo-1u-pVK"/>
-                            <constraint firstAttribute="trailing" secondItem="jS1-Ub-OW7" secondAttribute="trailing" constant="10" id="hbT-a1-xqe"/>
+                            <constraint firstAttribute="trailing" secondItem="jS1-Ub-OW7" secondAttribute="trailing" constant="12" id="hbT-a1-xqe"/>
                             <constraint firstAttribute="trailing" secondItem="ycj-il-WQq" secondAttribute="trailing" id="iWr-ZW-bnr"/>
                             <constraint firstItem="rdx-W8-RgV" firstAttribute="centerX" secondItem="9VG-IU-3q5" secondAttribute="centerX" id="uiz-Mz-Rps"/>
                         </constraints>
@@ -118,11 +118,20 @@
                     <connections>
                         <outlet property="chatsTableView" destination="rdx-W8-RgV" id="KjR-JU-g2l"/>
                         <segue destination="wMG-rA-VvZ" kind="show" identifier="Show Chat Detail" id="Ou1-gQ-Ams"/>
+                        <segue destination="OQJ-F8-9TN" kind="presentation" identifier="Show Create Chat" id="P2T-uR-FCx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCF-l1-0xB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1125.5999999999999" y="177.66116941529236"/>
+        </scene>
+        <!--Create Chat-->
+        <scene sceneID="FK0-NZ-fxY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Create Chat" referencedIdentifier="Create Chat" id="OQJ-F8-9TN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ya0-54-iVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="94"/>
         </scene>
         <!--Chat Detail-->
         <scene sceneID="S0k-MJ-2a0">

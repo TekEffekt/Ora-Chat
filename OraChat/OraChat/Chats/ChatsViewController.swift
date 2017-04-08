@@ -32,6 +32,7 @@ class ChatsViewController: UIViewController, UITableViewDelegate, DefaultTheme {
     }
     
     @IBAction func plusButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "Show Create Chat", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

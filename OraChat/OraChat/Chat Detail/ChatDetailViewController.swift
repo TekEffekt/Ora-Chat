@@ -33,4 +33,8 @@ class ChatDetailViewController: UIViewController, DefaultTheme {
         }
     }
 
+    @IBAction func tappedPlus(_ sender: UIButton) {
+        
+    }
+    
 }
