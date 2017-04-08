@@ -73,7 +73,9 @@ class ChatsViewController: UIViewController, UITableViewDelegate, DefaultTheme {
     func clearSearch() {
         navigationItem.titleView = nil
         navigationItem.title = "OraChat"
-        navigationItem.rightBarButtonItem = searchButton
+        if let searchButton = searchButton {
+            navigationItem.rightBarButtonItem = searchButton
+        }
         searchController.searchBar.text = nil
         chatsTableView.reloadData()
     }
