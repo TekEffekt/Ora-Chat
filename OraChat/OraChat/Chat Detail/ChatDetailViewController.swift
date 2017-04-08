@@ -34,7 +34,15 @@ class ChatDetailViewController: UIViewController, DefaultTheme {
     }
 
     @IBAction func tappedPlus(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "Show Create Message", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nav = segue.destination as? UINavigationController {
+            if let createMessageVc = nav.visibleViewController as? CreateMessageTableViewController {
+                createMessageVc.chatId = chat.id
+            }
+        }
     }
     
 }

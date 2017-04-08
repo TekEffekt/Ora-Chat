@@ -62,10 +62,13 @@
 		B6C8E2321E987C870014FD9D /* ReadProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2311E987C870014FD9D /* ReadProfileRequest.swift */; };
 		B6C8E2341E987D590014FD9D /* ReadProfileOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2331E987D590014FD9D /* ReadProfileOperation.swift */; };
 		B6C8E2361E98A9640014FD9D /* Create Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C8E2351E98A9640014FD9D /* Create Chat.storyboard */; };
-		B6C8E2381E98A9730014FD9D /* CreateMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C8E2371E98A9730014FD9D /* CreateMessage.storyboard */; };
+		B6C8E2381E98A9730014FD9D /* Create Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C8E2371E98A9730014FD9D /* Create Message.storyboard */; };
 		B6C8E23C1E98ACB00014FD9D /* CreateChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E23B1E98ACB00014FD9D /* CreateChatViewController.swift */; };
 		B6C8E23E1E98AF0D0014FD9D /* CreateChatRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E23D1E98AF0D0014FD9D /* CreateChatRequest.swift */; };
 		B6C8E2401E98AF7B0014FD9D /* CreateChatOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E23F1E98AF7B0014FD9D /* CreateChatOperation.swift */; };
+		B6C8E2421E98B4D70014FD9D /* CreateMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2411E98B4D70014FD9D /* CreateMessageTableViewController.swift */; };
+		B6C8E2441E98B5820014FD9D /* CreateMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2431E98B5820014FD9D /* CreateMessageRequest.swift */; };
+		B6C8E2461E98B5F60014FD9D /* CreateMessageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E2451E98B5F60014FD9D /* CreateMessageOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,10 +150,13 @@
 		B6C8E2311E987C870014FD9D /* ReadProfileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadProfileRequest.swift; sourceTree = "<group>"; };
 		B6C8E2331E987D590014FD9D /* ReadProfileOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadProfileOperation.swift; sourceTree = "<group>"; };
 		B6C8E2351E98A9640014FD9D /* Create Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Create Chat.storyboard"; sourceTree = "<group>"; };
-		B6C8E2371E98A9730014FD9D /* CreateMessage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateMessage.storyboard; sourceTree = "<group>"; };
+		B6C8E2371E98A9730014FD9D /* Create Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Create Message.storyboard"; sourceTree = "<group>"; };
 		B6C8E23B1E98ACB00014FD9D /* CreateChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChatViewController.swift; sourceTree = "<group>"; };
 		B6C8E23D1E98AF0D0014FD9D /* CreateChatRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChatRequest.swift; sourceTree = "<group>"; };
 		B6C8E23F1E98AF7B0014FD9D /* CreateChatOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChatOperation.swift; sourceTree = "<group>"; };
+		B6C8E2411E98B4D70014FD9D /* CreateMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMessageTableViewController.swift; sourceTree = "<group>"; };
+		B6C8E2431E98B5820014FD9D /* CreateMessageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMessageRequest.swift; sourceTree = "<group>"; };
+		B6C8E2451E98B5F60014FD9D /* CreateMessageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMessageOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				B64353781E94C3CF00472091 /* ChatDetailViewController.swift */,
+				B6C8E2411E98B4D70014FD9D /* CreateMessageTableViewController.swift */,
 				B64353311E94428400472091 /* Message.swift */,
 				B643537A1E95249500472091 /* ChatView.swift */,
 				B643537C1E9526C400472091 /* BubbleView.swift */,
@@ -323,7 +330,7 @@
 				B66521111E933BD30040A01A /* Chats.storyboard */,
 				B6C8E2351E98A9640014FD9D /* Create Chat.storyboard */,
 				B66521101E933BD30040A01A /* Chat Detail.storyboard */,
-				B6C8E2371E98A9730014FD9D /* CreateMessage.storyboard */,
+				B6C8E2371E98A9730014FD9D /* Create Message.storyboard */,
 				B66521121E933BD30040A01A /* Login.storyboard */,
 				B66521131E933BD30040A01A /* Register.storyboard */,
 			);
@@ -367,6 +374,7 @@
 				B6C8E22D1E98724B0014FD9D /* ChatMessageListRequest.swift */,
 				B6C8E2311E987C870014FD9D /* ReadProfileRequest.swift */,
 				B6C8E23D1E98AF0D0014FD9D /* CreateChatRequest.swift */,
+				B6C8E2431E98B5820014FD9D /* CreateMessageRequest.swift */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -380,6 +388,7 @@
 				B6C8E22F1E9874E00014FD9D /* ChatMessageListOperation.swift */,
 				B6C8E2331E987D590014FD9D /* ReadProfileOperation.swift */,
 				B6C8E23F1E98AF7B0014FD9D /* CreateChatOperation.swift */,
+				B6C8E2451E98B5F60014FD9D /* CreateMessageOperation.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -503,7 +512,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C8E2381E98A9730014FD9D /* CreateMessage.storyboard in Resources */,
+				B6C8E2381E98A9730014FD9D /* Create Message.storyboard in Resources */,
 				B66521161E933BD30040A01A /* Chat Detail.storyboard in Resources */,
 				B665211B1E933BD90040A01A /* LaunchScreen.storyboard in Resources */,
 				B66521141E933BD30040A01A /* Account.storyboard in Resources */,
@@ -542,6 +551,7 @@
 				B64353F51E95CE7800472091 /* DefaultTheme.swift in Sources */,
 				B643533D1E94555A00472091 /* ChatCell.swift in Sources */,
 				B6C435CA1E982B62003D8B84 /* UserParser.swift in Sources */,
+				B6C8E2441E98B5820014FD9D /* CreateMessageRequest.swift in Sources */,
 				B64353F91E95D1E300472091 /* AccountViewController.swift in Sources */,
 				B64353791E94C3CF00472091 /* ChatDetailViewController.swift in Sources */,
 				B64353321E94428400472091 /* Message.swift in Sources */,
@@ -550,6 +560,7 @@
 				B6C435D01E98416D003D8B84 /* RegisterOperation.swift in Sources */,
 				B643533F1E94555A00472091 /* ChatsViewController.swift in Sources */,
 				B6C435C71E98195B003D8B84 /* LoginOperation.swift in Sources */,
+				B6C8E2421E98B4D70014FD9D /* CreateMessageTableViewController.swift in Sources */,
 				B6C8E2301E9874E00014FD9D /* ChatMessageListOperation.swift in Sources */,
 				B643537B1E95249500472091 /* ChatView.swift in Sources */,
 				B643533E1E94555A00472091 /* ChatsDatasource.swift in Sources */,
@@ -576,6 +587,7 @@
 				B6C8E23E1E98AF0D0014FD9D /* CreateChatRequest.swift in Sources */,
 				B6C435B51E97E8A0003D8B84 /* RequestParameters.swift in Sources */,
 				B6C435BF1E97EDE1003D8B84 /* NetworkErrors.swift in Sources */,
+				B6C8E2461E98B5F60014FD9D /* CreateMessageOperation.swift in Sources */,
 				B6C435B71E97E8E9003D8B84 /* Dispatcher.swift in Sources */,
 				B64353F11E95CE3200472091 /* Date+TimeDifDisplay.swift in Sources */,
 				B6C435CE1E984050003D8B84 /* RegisterRequest.swift in Sources */,

@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rdx-W8-RgV">
-                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Chat Cell" id="Krc-YX-86a" customClass="ChatCell" customModule="OraChat" customModuleProvider="target">
@@ -93,9 +93,9 @@
                                 </connections>
                             </button>
                             <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="ycj-il-WQq">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="0.0"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="uhc-5A-ldS"/>
+                                    <constraint firstAttribute="height" id="uhc-5A-ldS"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -113,7 +113,9 @@
                             <constraint firstItem="rdx-W8-RgV" firstAttribute="centerX" secondItem="9VG-IU-3q5" secondAttribute="centerX" id="uiz-Mz-Rps"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="OraChat" id="Sj2-hd-WUT"/>
+                    <navigationItem key="navigationItem" title="OraChat" id="Sj2-hd-WUT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Y9e-jt-rYZ"/>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="chatsTableView" destination="rdx-W8-RgV" id="KjR-JU-g2l"/>

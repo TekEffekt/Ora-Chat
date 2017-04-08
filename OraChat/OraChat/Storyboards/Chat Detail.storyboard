@@ -50,11 +50,20 @@
                     </view>
                     <connections>
                         <outlet property="chatViewContainer" destination="pU7-BV-y2r" id="mPt-J6-3Tv"/>
+                        <segue destination="LhT-zS-h8c" kind="presentation" identifier="Show Create Message" id="mII-E2-DLw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GtB-fH-dsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-495.19999999999999" y="166.8665667166417"/>
+        </scene>
+        <!--Create Message-->
+        <scene sceneID="NL2-2k-NCm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Create Message" referencedIdentifier="Create Message" id="LhT-zS-h8c" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eal-9J-zoR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="166"/>
         </scene>
     </scenes>
     <resources>
